@@ -25,3 +25,5 @@ app.get("/", async(req, res) => {
       message: "Get data has successfully",
     });
          });
+
+app.use("/products", productController);
