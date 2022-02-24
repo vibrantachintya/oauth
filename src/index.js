@@ -9,7 +9,7 @@ app.use(express.json());
 
 const connect = require("./configs/db");
 
-app.listen(2345, async () => {
+app.listen(8080, async () => {
     try {
         await connect();
         console.log("Listening on 2345");
@@ -17,6 +17,14 @@ app.listen(2345, async () => {
         console.log(e.message);
     }
 });
+
+app.post("/", async(req, res) {
+        
+       return res.json({
+      status: 200,
+      message: "Get data has successfully",
+    });
+         });
 
 app.post("/login", login);
 
