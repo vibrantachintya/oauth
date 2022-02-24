@@ -18,7 +18,7 @@ app.listen(8080, async () => {
     }
 });
 
-app.post("/", async(req, res)) {
+app.post("/", async(req, res) => {
         
        return res.json({
       status: 200,
