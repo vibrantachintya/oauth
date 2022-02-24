@@ -32,7 +32,7 @@ app.post("/register", register);
 
 app.use("/products", productController);
 
-passport.serializeUser(function (user, done) {
+/*passport.serializeUser(function (user, done) {
     done(null, user);
 });
   
@@ -50,4 +50,4 @@ app.get("/auth/google/callback",
       const token = newToken(user);
       return res.send({ user, token });
     }
-);
+);*/
