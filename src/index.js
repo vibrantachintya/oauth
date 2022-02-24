@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const { login, register, newToken } = require("./controllers/auth.controller");
-const passport = require("./configs/google-oauth");
+//const passport = require("./configs/google-oauth");
 
 const productController = require("./controllers/product.controller");
 
